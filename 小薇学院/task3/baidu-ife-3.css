@@ -1,0 +1,39 @@
+#container{
+	position: relative;
+	width:auto;
+	height: 1000px;;
+	margin:auto;
+	background: #eee;
+	border:1px solid #999;
+}
+#left{
+	position: absolute;
+	left:20px;
+	top:20px;
+	width: 200px;
+	height: 120px;
+	border:1px solid #999;
+}
+#middle{
+	border:1px solid #999;
+	margin:20px 160px 0px 240px;
+	width:auto;
+}
+#right{
+	position: absolute;
+	right:20px;
+	top:20px;
+	width: 120px;
+	height:auto;
+	border:1px solid #999;
+}
+
+.logo{
+	width:80px;
+	height:80px;
+	margin:20px 0 20px 20px;
+}
+.text{
+	float: right;
+	margin: 20px 10px;
+}
