@@ -1,6 +1,6 @@
 #container{
 	position: relative;
-	width:auto;
+	max-width:auto;
 	height: 1000px;;
 	margin:auto;
 	background: #eee;
