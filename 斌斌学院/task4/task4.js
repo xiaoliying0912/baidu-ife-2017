@@ -18,6 +18,7 @@ window.onload=function(){
 		}else if(!isNaN(num.value)){   //判断是否为数字
 			var li=document.createElement('li');       //创建新节点li
 			li.innerHTML=num.value;                    //将input中获取到的内容赋给新创建的节点li中
+			num.value="";   
 			display.insertBefore(li,display.childNodes[0]);    // 在首节点之前插入新节点
 		}else{
 			alert("请输入数字");
@@ -29,6 +30,7 @@ window.onload=function(){
 		}else if(!isNaN(num.value)){
 			var li=document.createElement('li');    //创建新节点li
 			li.innerHTML=num.value;               //将input中获取到的内容赋给新创建的节点li中
+			num.value="";   
 			display.appendChild(li);              // 在节点之前后追加新节点
 		}else{ 
 			alert("请输入数字");
