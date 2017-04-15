@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="task5.js"></script>
+		<title>IFE JavaScript Task 05</title>
+		<style>
+			ul{
+				-webkit-padding-start: 0px;
+			}
+			li{
+				display: inline-block; 
+				width:25px;
+				height:auto;
+				padding:5px;
+				margin: 2px;
+				background:red;
+				list-style: none;
+				text-align: center;	
+				cursor: pointer;
+			}
+			input{
+				width: 370px;
+			}
+			#wrap{
+				width:500px;
+			}
+			#display{
+				display: flex;
+				height: 150px;
+				flex-flow: row nowrap;
+				align-items: flex-end;
+				background: lightgray;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+		<fieldset>
+			<legend>表单输入排序</legend>
+			<form id="myform">
+				<input id="num" type="text" value="" />
+			</form>
+			<button id="left_in">左侧入</button>
+			<button id="right_in">右侧入</button>
+			<button id="left_out">左侧出</button>
+			<button id="right_out">右侧出</button>
+			<button id="sort">排序</button>
+			<button id="randomSort">随机生成</button>
+		</fieldset>
+		<ul id="display">
+			
+		</ul>
+		</div>
+	</body>
+</html>
