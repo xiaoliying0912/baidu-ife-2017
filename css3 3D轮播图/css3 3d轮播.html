@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-<style>
+<head>
+	<meta charset="utf-8" />
+	<style>
     #frame{
     	margin:100px auto;
     	position:relative;
-	    width:500px;
-	    height:300px;
-	    perspective: 3000px;
-	    border-radius:5px}
+	width:500px;
+        height:300px;
+	perspective: 3000px;
+        border-radius:5px}
     #photos { 
     	 position: relative;
     	 height:300px;
     	 transform-style: preserve-3d;
     	 -webkit-transform-style: preserve-3d;
-    	   -webkit-animation: m1 16s 1s  infinite;
+    	 -webkit-animation: m1 16s 1s  infinite;
          animation: m1 10s 1s infinite linear;
-     }
+        }
     #photos img{
-    	position: absolute;
-	    width:500px;
-	    height:300px;
-	   
-	    }
+    		position: absolute;
+		width:500px;
+		height:300px; 
+        }
 	.img-1{
 		z-index: 9;
 		transform: rotateY(0deg) translateZ(400px);
 		-webkit-transform: rotateY(0deg) translateZ(400px);
-	     }
+	}
 	.img-2{
 		transform: rotateY(270deg) translateZ(400px);
 		-webkit-transform: rotateY(270deg) translateZ(400px);
-	   }
+	 }
 	.img-3{
 		transform: rotateY(180deg) translateZ(400px);
 		-webkit-transform: rotateY(180deg) translateZ(400px);
 	}
 	.img-4{
-	   transform: rotateY(90deg) translateZ(400px);
-		-webkit-transform: rotateY(90deg) translateZ(400px); 
+	       transform: rotateY(90deg) translateZ(400px);
+	       -webkit-transform: rotateY(90deg) translateZ(400px); 
 	}
     @-webkit-keyframes m1 {
         5%,25%{       		
-        transform: rotateY(90deg);  
-        -webkit-transform: rotateY(90deg);   } 
+        	transform: rotateY(90deg);  
+        	-webkit-transform: rotateY(90deg);   } 
         30%,50%{       		
-        transform: rotateY(180deg);  
-        -webkit-transform: rotateY(180deg);   }  
+       		 transform: rotateY(180deg);  
+        	-webkit-transform: rotateY(180deg);   }  
          55%,75%{       		
-        transform: rotateY(270deg);  
-        -webkit-transform: rotateY(270deg);   }       
+        	transform: rotateY(270deg);  
+       		 -webkit-transform: rotateY(270deg);   }       
          80%,100%{       		
-        transform: rotateY(360deg);  
-        -webkit-transform: rotateY(360deg);   }                 
-    } 
+       		 transform: rotateY(360deg);  
+       		 -webkit-transform: rotateY(360deg);   }                 
+        } 
 </style>
 </head>
 <body>
 <div id="frame" >
     <div id="photos" >
         <img class="img-1" src="Lighthouse.jpg" />
-		<img class="img-2" src="Penguins.jpg" />
+	<img class="img-2" src="Penguins.jpg" />
     	<img class="img-3" src="cat4.jpg"/>
-	    <img class="img-4" src="cat5.jpg" />	
+        <img class="img-4" src="cat5.jpg" />	
     </div>
 </div>
 </body>
